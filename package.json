@@ -1,0 +1,54 @@
+{
+  "_generated": {
+    "system": "package-json@1.0.0",
+    "status": "generated",
+    "edit": "edit src/ — dependencies and exports derive from imports; everything else preserved"
+  },
+  "name": "@teamscala/publish-registry",
+  "capability": "Publish-state registry: tracks which package versions have been published to the registry, single source of publish truth.",
+  "tier": "foundation",
+  "type": "module",
+  "version": "0.1.1",
+  "description": "Publish-state registry: tracks which package versions have been published to the registry, single source of publish truth.",
+  "imports": {
+    "#publish-registry/*": "./src/*",
+    "#publish-registry/*.ts": "./src/*.ts"
+  },
+  "files": [
+    "src"
+  ],
+  "dependencies": {
+    "@teamscala/logger": "*"
+  },
+  "devDependencies": {
+    "bun-types": "*",
+    "@happy-dom/global-registrator": "*",
+    "@testing-library/react": "*"
+  },
+  "exports": {
+    "./index": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.ts"
+    },
+    "./index.ts": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.ts"
+    },
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.ts"
+    },
+    "./version-comparison": {
+      "types": "./src/version-comparison.d.ts",
+      "default": "./src/version-comparison.ts"
+    },
+    "./version-comparison.ts": {
+      "types": "./src/version-comparison.d.ts",
+      "default": "./src/version-comparison.ts"
+    }
+  },
+  "repository": "https://github.com/teamgbg/bun-foundation-publish-registry",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
