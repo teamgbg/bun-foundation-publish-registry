@@ -32,7 +32,7 @@
 		"./version-comparison": "./src/version-comparison.ts",
 		"./version-comparison.ts": "./src/version-comparison.ts"
 	},
-	"repository": "https://github.com/teamgbg/bun-foundation-publish-registry",
+	"repository": "https://github.com/teamgbg/foundation-publish-registry-ts",
 	"publishConfig": {
 		"registry": "https://registry.npmjs.org"
 	}
